@@ -1,6 +1,6 @@
 ## marblr
 
-During the 2017 NCAA football season, [David Burge](https://twitter.com/iowahawkblog) proposed a simple, easy-to-comprehend system for determining which NCAA football teams would be invited to the four-team playoff - the "marble game." The rules of the game are simple:
+During the 2017 NCAA football season, [David Burge](https://twitter.com/iowahawkblog) proposed [a simple, easy-to-comprehend system](https://twitter.com/iowahawkblog/status/931947718628593664) for determining which NCAA football teams would be invited to the four-team playoff - the "marble game." The rules of the game are simple:
 
 - Each team starts with a pre-determined amount of marbles.
 - If a team wins a home game, they take 20% of the loser's marbles.

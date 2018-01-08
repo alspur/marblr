@@ -170,4 +170,4 @@ ncaa_games <- bind_rows(fb17, fb16, fb15, fb14, fb13, fb12, fb11, fb10,
                         fb09, fb08, fb07, fb06, fb05, fb04, fb03, fb02, 
                         fb01, fb00, fb99, fb98, fb97, fb96, fb95)
 
-devtools::use_data(ncaa_games, overwrite = TRUE, internal = TRUE)
+devtools::use_data(ncaa_games, overwrite = TRUE)

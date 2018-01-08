@@ -207,3 +207,5 @@ for(i in seq_along(1:unique_wk)){
   return(marble_long)
   
 } 
+
+if(getRversion() >= "2.15.1")  utils::globalVariables(c("p5"))

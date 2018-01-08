@@ -17,7 +17,7 @@ get_season <- function(df, yr = 2017, wk = 36){
   if(!is.data.frame(df)){
     stop("`df` must be the `ncaa_games` data frame")
   }
-  if(dim(df)[1]!=15899 | dim(df)[2] != 11){
+  if(dim(df)[1]!=15938 | dim(df)[2] != 11){
     stop("`df` must be the `ncaa_games` data frame")
   }
   if(!is.numeric(yr)){

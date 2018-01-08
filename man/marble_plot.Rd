@@ -4,7 +4,7 @@
 \alias{marble_plot}
 \title{marble_plot}
 \usage{
-marble_plot(df)
+marble_plot(df, alpha_level = 0.4)
 }
 \arguments{
 \item{df}{A dataframe resulting from calling the marble_game funciton}

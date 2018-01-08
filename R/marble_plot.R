@@ -8,7 +8,7 @@
 #' @return A ggplot object plotting the results of a marble_game() call
 #' @export
 #'
-marble_plot <- function(df){
+marble_plot <- function(df, alpha_level = .4){
   
   if(!is.data.frame(df)){
     stop("`df` must be a data frame")
@@ -23,7 +23,7 @@ marble_plot <- function(df){
   marbles <- NULL
 
   ggplot(df, aes(x = season_wk, y = marbles, group = team))+ 
-    geom_line(alpha =.4) +
+    geom_line(alpha = alpha_level) +
     labs(x = "Week", y = "Marbles")+
     theme_bw()
   

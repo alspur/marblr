@@ -1,6 +1,6 @@
 #' NCAA FBS Football Game Results, 1995-2017
 #'
-#' @format A dataframe with 15,899 rows and 11 variables:
+#' @format A dataframe with 15,938 rows and 11 variables:
 #' \describe{
 #'   \item{season_yr}{College football season year}
 #'   \item{season_wk}{Week number of college football season}
@@ -16,4 +16,6 @@
 #' }
 #'
 #' @source \url{https://www.masseyratings.com/data.php}
+#'
+
 "ncaa_games"

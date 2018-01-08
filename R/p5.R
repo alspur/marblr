@@ -7,4 +7,5 @@
 #' }
 #'
 #' @source \url{https://en.wikipedia.org/wiki/Power_Five_conferences}
+#' 
 "p5"

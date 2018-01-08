@@ -8,6 +8,8 @@ marble_plot(df, alpha_level = 0.4)
 }
 \arguments{
 \item{df}{A dataframe resulting from calling the marble_game funciton}
+
+\item{alpha_level}{A number between 0 and 1 representing the opacity of plotted lines. Default value is 0.4}
 }
 \value{
 A ggplot object plotting the results of a marble_game() call

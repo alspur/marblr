@@ -19,6 +19,8 @@ geom_team <- function(df, team_name, team_color){
   marbles <- NULL
   
   geom_line(data = df %>% filter(team == team_name), 
-            aes(x =season_wk, y = marbles), color = team_color)
+            aes(x = season_wk, y = marbles), color = team_color) +
+    geom_point(data = df %>% filter(team == team_name),
+               aes(x = season_wk, y = marbles), color = team_color)
   
 }

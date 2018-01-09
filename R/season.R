@@ -9,8 +9,6 @@
 #' @return A dataframe with NCAA FBS football game results
 #' @export
 #' 
-#' @example 
-#' get_season(ncaa_games)
 
 get_season <- function(df, yr = 2017, wk = 36){
   

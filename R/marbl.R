@@ -17,10 +17,10 @@
 marble_game <- function(df, yr = 2017,
                         wk = 36, p5_value = 120){
   if(!is.data.frame(df)){
-    stop("`df` must be the `ncaa_games` data frame")
+    stop("`df` must be a `ncaa_games` data frame")
   }
-  if(dim(df)[1]!=15938 | dim(df)[2] != 11){
-    stop("`df` must be the `ncaa_games` data frame")
+  if(dim(df)[2] != 11){
+    stop("`df` must be a `ncaa_games` data frame")
   }
   if((yr %% 1) != 0){
     stop("`season_year` must be an integer")

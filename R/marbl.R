@@ -28,8 +28,8 @@ marble_game <- function(df, yr = 2017,
   if(yr < 1995){
     stop("`season_year` can't be lower than 1995")
   }
-  if(yr > 2017){
-    stop("`season_year` can't be greater than 2017")
+  if(yr > 2018){
+    stop("`season_year` can't be greater than 2018")
   }
   
   # set vars to null to satisfy devtools::check()

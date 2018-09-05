@@ -1,6 +1,6 @@
-#' NCAA FBS Football Game Results, 1995-2017
+#' NCAA FBS Football Game Results, 1995-2018
 #'
-#' @format A dataframe with 15,938 rows and 11 variables:
+#' @format A dataframe with 15,984 rows and 11 variables:
 #' \describe{
 #'   \item{season_yr}{College football season year}
 #'   \item{season_wk}{Week number of college football season}

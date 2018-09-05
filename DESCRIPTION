@@ -1,7 +1,7 @@
 Package: marblr
-Version: 0.0.0.9000
+Version: 0.1.0
 Title: The NCAA Marble Game
-Description: The NCAA Marble Game is a way to approximate the relative strength of NCAA FBS football programs in a given season. This package allows users to simulate marble game rankings for the 1995-2017 NCAA football seasons.
+Description: The NCAA Marble Game is a way to approximate the relative strength of NCAA FBS football programs in a given season. This package allows users to simulate marble game rankings for the 1995-2018 NCAA football seasons.
 Authors@R: person("Alex", "Spurrier", , "alex.spurrier@gmail.com", c("aut", "cre"))
 License: MIT + file LICENSE
 Encoding: UTF-8

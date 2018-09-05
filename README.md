@@ -13,9 +13,11 @@ The motivation behind the #marblegame is simple:
 
 ### Package features
 
-The `marblr` package allows R users to simulate the marble game for NCAA football seasons from 1995 to 2017 (data scraped from Massey Ratings). The `marble_game` function takes four inputs:
+The `marblr` package allows R users to simulate the marble game for NCAA football seasons from 1995 to 2017 (data scraped from Massey Ratings). Data from 2018 games will be updated as it becomes availalbe. 
+
+The `marble_game` function takes four inputs:
 
 - `ncaa_games`: A dataframe that comes with the `marblr` package with game result data scraped from Massey Ratings.
-- `yr`: A four-digit year from 1995 to 2017, indicating the desired football season.
+- `yr`: A four-digit year from 1995 to 2018, indicating the desired football season.
 - `wk`: A integer to determine the maximum week of the season to include. By default, it will pull all available weeks. If you want to limit to the first 6 weeks of the season, you would set this parameter to 6. 
 - `p5_value`: An integer to determine the initial marble count given to teams from the 2017 Power 5 conferences (ACC, Big 10, Big 12, Pac 12, SEC, and Notre Dame) at the start of a season. This defaults to 120 for teams from the Power 5 and 100 for all other schools. 

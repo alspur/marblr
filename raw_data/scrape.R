@@ -8,6 +8,9 @@ library(rvest)
 
 # get season data urls ------------
 
+# 2018 ncaa football results url
+ncaa_2018_url <- "https://www.masseyratings.com/scores.php?s=300937&sub=11604&all=1&mode=2&format=0"
+
 # 2017 ncaa football results url
 ncaa_2017_url <- "https://www.masseyratings.com/scores.php?s=295489&sub=11604&all=1&mode=2&format=0"
 
@@ -56,8 +59,9 @@ ncaa_1996_url <- "https://www.masseyratings.com/scores.php?s=41841&sub=11604&all
 ncaa_1995_url <- "https://www.masseyratings.com/scores.php?s=41840&sub=11604&all=1&mode=2&format=0"
 
 # create df of urls and years
-ncaa_urls <- tibble(year = 2017:1995,
-                    url = c(ncaa_2017_url, ncaa_2016_url, ncaa_2015_url,
+ncaa_urls <- tibble(year = 2018:1995,
+                    url = c(ncaa_2018_url,
+                            ncaa_2017_url, ncaa_2016_url, ncaa_2015_url,
                             ncaa_2014_url, ncaa_2013_url, ncaa_2012_url,
                             ncaa_2011_url, ncaa_2010_url, ncaa_2009_url,
                             ncaa_2008_url, ncaa_2007_url, ncaa_2006_url,
@@ -68,7 +72,7 @@ ncaa_urls <- tibble(year = 2017:1995,
 
 # create scrape/clean function ------
 
-scrape_season <- function(s_year = 2017){
+scrape_season <- function(s_year = 2018){
   
   # take s_year and extract url from ncaa_url df
   season_url <- ncaa_urls %>% 
@@ -140,6 +144,7 @@ scrape_season <- function(s_year = 2017){
 
 # download season data -----
 
+fb18 <- scrape_season(2018)
 fb17 <- scrape_season(2017)
 fb16 <- scrape_season(2016)
 fb15 <- scrape_season(2015)
@@ -166,7 +171,8 @@ fb95 <- scrape_season(1995)
 
 # join data from all years ------------
 
-ncaa_games <- bind_rows(fb17, fb16, fb15, fb14, fb13, fb12, fb11, fb10,
+ncaa_games <- bind_rows(fb18,
+                        fb17, fb16, fb15, fb14, fb13, fb12, fb11, fb10,
                         fb09, fb08, fb07, fb06, fb05, fb04, fb03, fb02, 
                         fb01, fb00, fb99, fb98, fb97, fb96, fb95)
 

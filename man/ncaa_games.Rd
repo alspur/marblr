@@ -3,8 +3,8 @@
 \docType{data}
 \name{ncaa_games}
 \alias{ncaa_games}
-\title{NCAA FBS Football Game Results, 1995-2017}
-\format{A dataframe with 15,938 rows and 11 variables:
+\title{NCAA FBS Football Game Results, 1995-2018}
+\format{A dataframe with 15,984 rows and 11 variables:
 \describe{
   \item{season_yr}{College football season year}
   \item{season_wk}{Week number of college football season}
@@ -25,6 +25,6 @@
 ncaa_games
 }
 \description{
-NCAA FBS Football Game Results, 1995-2017
+NCAA FBS Football Game Results, 1995-2018
 }
 \keyword{datasets}

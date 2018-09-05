@@ -28,8 +28,8 @@ get_season <- function(df, yr = 2017, wk = 36){
   if(yr < 1995){
     stop("`yr` can't be lower than 1995")
   }
-  if(yr > 2017){
-    stop("`yr` can't be greater than 2017")
+  if(yr > 2018){
+    stop("`yr` can't be greater than 2018")
   }
   if(!is.numeric(wk)){
     stop("`wk` must be a number")

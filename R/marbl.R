@@ -15,7 +15,7 @@
 #'
 
 marble_game <- function(df, yr = 2017,
-                        wk = 36, p5_value = 120){
+                        wk = 36, p5_value = 200){
   if(!is.data.frame(df)){
     stop("`df` must be a `ncaa_games` data frame")
   }
@@ -195,8 +195,8 @@ for(i in seq_along(1:unique_wk)){
     left_join(schedule) %>% 
     ungroup() %>% 
     group_by(team) %>% 
-    mutate(game_flag = ifelse(change >= 40, "big win", NA),
-           game_flag = ifelse(change <= -40, "big loss", game_flag),
+    mutate(game_flag = ifelse(change >= 50, "big win", NA),
+           game_flag = ifelse(change <= -50, "big loss", game_flag),
            game_flag = ifelse(change == min(change, na.rm = TRUE),
                               "biggest loss", game_flag),
            game_flag = ifelse(change == max(change, na.rm = TRUE),

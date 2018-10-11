@@ -4,7 +4,7 @@
 \alias{marble_game}
 \title{marble_game}
 \usage{
-marble_game(df, yr = 2017, wk = 36, p5_value = 120)
+marble_game(df, yr = 2017, wk = 36, p5_value = 200)
 }
 \arguments{
 \item{df}{Data frame of NCAA football game results, should always be ncaa_games}
